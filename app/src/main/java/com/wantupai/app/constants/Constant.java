@@ -12,7 +12,7 @@ import java.io.File;
 public class Constant {
 
     //网络接口基础地址
-    public static final String BASE_URL = "http://c.m.163.com/nc/article/headline/";
+    public static final String BASE_URL = "http://testv3.wantupai.com/api/";
 
     public static final String PATH_SDCARD = Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator + "codeest" + File.separator + "fristth";
 

@@ -1,14 +1,15 @@
 package com.wantupai.app.model.api;
 
-import com.wantupai.app.model.bean.HomeBean;
+import com.wantupai.app.model.bean.TabBean;
 
 import io.reactivex.Flowable;
-import retrofit2.http.GET;
+import retrofit2.http.Headers;
+import retrofit2.http.POST;
 
 
 public interface HomeApi {
 
-    //新闻列表内容
-    @GET("T1348647909107/0-20.html")
-    Flowable<HomeBean> getHome();
+    @Headers({"XX-Device-Type:android","XX-Api-Version:v1"})
+    @POST("label")
+    Flowable<TabBean> getTabList();
 }

@@ -9,6 +9,7 @@ import com.wantupai.app.adapters.HomeAdapter;
 import com.wantupai.app.base.BaseFragment;
 import com.wantupai.app.base.interfaces.contrenct.HomeContract;
 import com.wantupai.app.model.bean.HomeBean;
+import com.wantupai.app.model.bean.TabBean;
 import com.wantupai.app.presenter.HomePresenter;
 import com.jcodecraeer.xrecyclerview.XRecyclerView;
 
@@ -56,11 +57,11 @@ public class HomeFragment extends BaseFragment<HomePresenter> implements HomeCon
 
 
     @Override
-    public void showHomeChannel(List<HomeBean.T1348647909107Bean> list) {
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(), 2);
-        mHomeXre.setLayoutManager(gridLayoutManager);
-        HomeAdapter homeAdapter = new HomeAdapter(getContext(), list);
-        mHomeXre.setAdapter(homeAdapter);
+    public void showHomeChannel(List<TabBean.DataBean> list) {
+//        GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(), 2);
+//        mHomeXre.setLayoutManager(gridLayoutManager);
+//        HomeAdapter homeAdapter = new HomeAdapter(getContext(), list);
+//        mHomeXre.setAdapter(homeAdapter);
 
     }
 }
